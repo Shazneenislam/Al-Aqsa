@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Album</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" />
+    <style>
+      .playfair {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+        <!-- hero section -->
+    <section class="w-screen relative">
+		<div class="inset-0">
+			<img
+			  src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+			  alt="Elegant party hall with tables and decorations"
+			  class="w-full h-[600px] md:h-[400px] object-cover" 
+			/>
+		</div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black flex flex-col justify-center items-center p-6">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white playfair italic">
+            Explore The Halls with Us
+          </h1>
+		  <img src="/img/shape.svg" alt="Decorative Shape" class="m-4 w-full md:w-1/9"/>
+        </div>
+    </section>
+      <!-- hero section end -->
+
+      <!-- photo gallery -->
+    <section class="grid grid-rows-2 justify-end items-center mx-auto py-16">
+        <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-2 gap-8">
+                <div class=" grid grid-rows-2 gap-8">
+                    <div class="relative">
+                        <div class="absolute inset-0 cursor-pointer duration-300 rounded-lg flex justify-center items-center p-4">
+					        <div class="text-white absolute inset-0 flex justify-center items-center">
+				                <div class="absolute inset-0 bg-black opacity-0 hover:opacity-60 hover:border-white hover:cursor-pointer duration-300 duration-300 rounded-lg flex justify-center items-center">
+                                    <div class="border-1 border-yellow-600 px-22 py-26"><h2 class="text-xl font-bold mb-2">Grand Opening</h2></div>
+                                </div>
+                            </div>
+				        </div>
+                        <img
+                        src="/img/photo1.jpg"
+                        alt="Photo 1"
+                        class="shadow-lg" />
+                    </div>
+                    <div class="relative">
+                        <div class="absolute inset-0 cursor-pointer duration-300 rounded-lg flex justify-center items-center p-4">
+					        <div class="text-white absolute inset-0 flex justify-center items-center">
+				                <div class="absolute inset-0 bg-black opacity-0 hover:opacity-60 hover:border-white hover:cursor-pointer duration-300 duration-300 rounded-lg flex justify-center items-center">
+                                    <div class="border-1 border-yellow-600 px-22 py-26"><h2 class="text-xl font-bold mb-2">Grand Opening</h2></div>
+                                </div>
+                            </div>
+				        </div>
+                        <img
+                        src="/img/photo2.jpg"
+                        alt="Photo 2"
+                        class="shadow-lg" />
+                    </div>
+                </div>
+                <div class=" grid grid-rows-2 gap-8">
+                    <div class="relative">
+                        <div class="absolute inset-0 cursor-pointer duration-300 rounded-lg flex justify-center items-center p-4">
+					        <div class="text-white absolute inset-0 flex justify-center items-center">
+				                <div class="absolute inset-0 bg-black opacity-0 hover:opacity-60 hover:border-white hover:cursor-pointer duration-300 duration-300 rounded-lg flex justify-center items-center">
+                                    <div class="border-1 border-yellow-600 px-22 py-26"><h2 class="text-xl font-bold mb-2">Grand Opening</h2></div>
+                                </div>
+                            </div>
+				        </div>
+                        <img
+                        src="/img/photo3.jpg"
+                        alt="Photo 3"
+                        class="shadow-lg" />
+                    </div>
+                    <div class="relative">
+                        <div class="absolute inset-0 cursor-pointer duration-300 rounded-lg flex justify-center items-center p-4">
+					        <div class="text-white absolute inset-0 flex justify-center items-center">
+				                <div class="absolute inset-0 bg-black opacity-0 hover:opacity-60 hover:border-white hover:cursor-pointer duration-300 duration-300 rounded-lg flex justify-center items-center">
+                                    <div class="border-1 border-yellow-600 px-22 py-26"><h2 class="text-xl font-bold mb-2">Grand Opening</h2></div>
+                                </div>
+                            </div>
+				        </div>
+                        <img
+                        src="/img/photo4.jpg"
+                        alt="Photo 4"
+                        class="shadow-lg" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid grid-cols-1">
+                <div class="relative">
+                    <div class="absolute inset-0 cursor-pointer duration-300 rounded-lg flex justify-center items-center p-4">
+					    <div class="text-white absolute inset-0 flex justify-center items-center">
+				            <div class="absolute w-[370px] inset-0 bg-black opacity-0 hover:opacity-60 hover:border-white hover:cursor-pointer duration-300 duration-300 rounded-lg flex justify-center items-center">
+                                <div class="border-1 border-yellow-600 px-22 py-68"><h2 class="text-xl font-bold mb-2">Grand Opening</h2></div>
+                            </div>
+                        </div>
+				    </div>
+                    <img
+                      src="/img/photo5.jpg"
+                      alt="Photo 5"
+                      class="shadow-lg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center">
+            <div class="grid grid-cols-2 gap-8 mx-auto mt-6">
+                <div class="relative">
+                        <div class="absolute inset-0 cursor-pointer duration-300 rounded-lg flex justify-center items-center p-4">
+					        <div class="text-white absolute inset-0 flex justify-center items-center">
+				                <div class="absolute inset-0 bg-black opacity-0 hover:opacity-60 hover:border-white hover:cursor-pointer duration-300 duration-300 rounded-lg flex justify-center items-center">
+                                    <div class="border-1 border-yellow-600 px-72 py-68"><h2 class="text-xl font-bold mb-2">Grand Opening</h2></div>
+                                </div>
+                            </div>
+				        </div>
+                    <img
+                      src="/img/photo6.jpg"
+                      alt="Photo 6"
+                      class="shadow-lg" />
+                </div>
+                <div class="grid grid-rows-2 gap-8">
+                    <div class="relative">
+                        <div class="absolute w-[370px] inset-0 cursor-pointer duration-300 rounded-lg flex justify-center items-center p-4">
+					        <div class="text-white absolute inset-0 flex justify-center items-center">
+				                <div class="absolute inset-0 bg-black opacity-0 hover:opacity-60 hover:border-white hover:cursor-pointer duration-300 duration-300 rounded-lg flex justify-center items-center">
+                                    <div class="border-1 border-yellow-600 px-22 py-26"><h2 class="text-xl font-bold mb-2">Grand Opening</h2></div>
+                                </div>
+                            </div>
+				        </div>
+                        <img
+                            src="/img/photo8.jpg"
+                            alt="Photo 8"
+                            class="shadow-lg"/>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute w-[370px] inset-0 cursor-pointer duration-300 rounded-lg flex justify-center items-center p-4">
+					        <div class="text-white absolute inset-0 flex justify-center items-center">
+				                <div class="absolute inset-0 bg-black opacity-0 hover:opacity-60 hover:border-white hover:cursor-pointer duration-300 duration-300 rounded-lg flex justify-center items-center">
+                                    <div class="border-1 border-yellow-600 px-22 py-26"><h2 class="text-xl font-bold mb-2">Grand Opening</h2></div>
+                                </div>
+                            </div>
+				        </div>
+                        <img
+                            src="/img/photo7.jpg"
+                            alt="Photo 7"
+                            class="shadow-lg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- photo gallery ends -->
+    
+    <script>
+      // Replace all placeholders with SVGs
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
