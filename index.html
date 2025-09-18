@@ -4,10 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Al-Aqsa></Al-Aqsa></title> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title><Al-Aqsa></Al-Aqsa></title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-   
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <style>
+        .playfair {
+            font-family: "Playfair Display", serif;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -17,17 +26,12 @@
             <!-- Element grid -->
             <div class="grid grid-cols-2 place-items-center">
                 <!-- left grid -->
-                <div class="inline-flex grid-cols-2 gap-2">
+                <div class="inline-flex grid-cols-2 gap-2 mt-0.5">
                     <!-- Call icon -->
-                    <div class="w-[20px] ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path fill="#ffffff"
-                                d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM248 192.7C257.8 190 268.1 195.1 272 204.5L292.3 253.2C295.7 261.5 293.4 271 286.4 276.7L264.3 294.7C280.5 330.5 308.8 359.7 343.9 377.1L363.2 353.5C368.9 346.6 378.4 344.2 386.7 347.6L435.4 367.9C444.8 371.8 449.8 382.1 447.2 391.9L446.4 394.7C437.6 427 406.3 454.6 368.2 446.5C280.7 428 211.9 359.1 193.3 271.6C185.2 233.5 212.8 202.2 245.1 193.4L247.9 192.6z">
-                            </path>
-                        </svg>
-
+                    <div class="text-white">
+                        <i data-lucide="phone" width="15" height="15"></i>
                     </div>
-                    <a href="#" class="text-white text-xs hover:underline font-semibold mt-0.5">
+                    <a href="#" class="text-white text-xs hover:underline font-semibold">
                         Call +16465913852
                     </a>
                     <!-- whatsApp icon -->
@@ -38,35 +42,25 @@
                             </path>
                         </svg>
                     </div>
-                    <a href="#" class="text-white text-xs hover:underline font-semibold mt-0.5">
+                    <a href="#" class="text-white text-xs hover:underline font-semibold">
                         WhatsApp: +16465913852
                     </a>
                 </div>
 
                 <!-- Right grid -->
 
-                <div class="inline-flex place-items-center gap-2">
+                <div class="inline-flex place-items-center gap-2 mr-50">
                     <!-- email icon -->
-                    <div class="w-[20px] ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path fill="#ffffff"
-                                d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z">
-                            </path>
-                        </svg>
+                    <div class="text-white">
+                        <i data-lucide="mail" width="15" height="15"></i>
                     </div>
                     <a href="#" class="text-white text-xs hover:underline font-semibold ">
                         Email: alaqsabanquet@gmail.com
                     </a>
                     <!-- facbook icon -->
                     <div class="flex w-[80px] h-[24px] bg-[#a88664] ml-8">
-                        <div class="w-[18px] mt-0.5 ml-7 ">
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
-                                    class="dark:hover:bg-[#8e0f23]">
-                                    <path fill="#ffffff"
-                                        d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z">
-                                    </path>
-                                </svg> </a>
+                        <div class="mt-1.5 ml-6 text-white">
+                            <i data-lucide="facebook" weidth="13" height="13"></i>
                         </div>
                     </div>
                 </div>
@@ -80,26 +74,26 @@
     <!-- Header Section -->
     <section class="flex w-full h-20 bg-white justify-center items-center">
         <!-- logo -->
-        <div class="container w-6xl grid grid-cols-3 ">
-            <div class="inline-flex">
+        <div class="container w-8xl grid grid-cols-3 ">
+            <div class="inline-flex ml-57">
                 <img src="https://alaqsabanquet.com/wp-content/uploads/2023/05/ALBH-Logo-update.png"
                     alt="Al-Aqsa Party Hall" class="w-[75px] h-[60px]">
             </div>
             <!-- Menu bar -->
-            <div class="mt-5 ">
+            <div class="mt-5 ml-15">
                 <nav class="inline-flex items-center">
                     <ul class="flex-1 text-center">
                         <li class="list-none inline-block"><a href="#"
-                                class="px-2 no-underline text-sm text-[#bb946a] font-bold hover:text-[#a88664]">Home</a>
+                                class="px-4 no-underline text-sm text-[#bb946a] font-bold hover:text-[#a88664]">Home</a>
                         </li>
                         <li class="list-none inline-block"><a href="#"
-                                class="px-2 no-underline text-sm text-[#bb946a] font-normal hover:text-[#a88664]">Booking
+                                class="px-4 no-underline text-sm text-[#bb946a] font-normal hover:text-[#a88664]">Booking
                                 Our Venue</a></li>
                         <li class="list-none inline-block"><a href="#"
-                                class="px-2 no-underline text-sm text-[#bb946a] font-normal hover:text-[#a88664]">Our
+                                class="px-4 no-underline text-sm text-[#bb946a] font-normal hover:text-[#a88664]">Our
                                 Menu</a></li>
                         <li class="list-none inline-block"><a href="#"
-                                class="px-2 no-underline text-sm text-[#bb946a] font-normal hover:text-[#a88664]">Contact&nbsp;Us</a>
+                                class="px-4 no-underline text-sm text-[#bb946a] font-normal hover:text-[#a88664]">Contact&nbsp;Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -108,16 +102,17 @@
 
             <div class="flex">
                 <button
-                    class="mt-3 p-2 text-sm text-white font-bold text-center bg-[#d6af80] w-30 h-10 rounded-lg transition-colors duration-300 hover:bg-[#bb946a] ">
+                    class="mt-3 p-2 text-sm text-white font-bold text-center bg-[#d6af80] w-25 h-10 rounded-lg transition-colors duration-300 hover:bg-[#bb946a] ">
                     Book Now
                 </button>
-                <div class="flex w-[40px] h-[40px] bg-[#e2b887] ml-4 rounded-full mt-3">
-                   
-                        <a href="#" class="w-[30px] mt-0.5 ml-7 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                <path fill="#bb1111" d="M470.5 463.6C451.4 416.9 405.5 384 352 384L288 384C234.5 384 188.6 416.9 169.5 463.6C133.9 426.3 112 375.7 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320C528 375.7 506.1 426.2 470.5 463.6zM430.4 496.3C398.4 516.4 360.6 528 320 528C279.4 528 241.6 516.4 209.5 496.3C216.8 459.6 249.2 432 288 432L352 432C390.8 432 423.2 459.6 430.5 496.3zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM320 304C297.9 304 280 286.1 280 264C280 241.9 297.9 224 320 224C342.1 224 360 241.9 360 264C360 286.1 342.1 304 320 304zM232 264C232 312.6 271.4 352 320 352C368.6 352 408 312.6 408 264C408 215.4 368.6 176 320 176C271.4 176 232 215.4 232 264z"/></svg>
-                        </a>
-                    
+                <div
+                    class="flex w-10 h-10 bg-[#ecd1b1] ml-6 rounded-full mt-3 transition-colors duration-300 hover:bg-[#bb946a]">
+
+                    <div class="text-[#8e0f23] ml-2 mt-1">
+                        <i data-lucide="circle-user" weidth="30" height="30"></i>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -128,7 +123,59 @@
 
     </section>
 
+    <section
+        class="w-full bg-cover bg-center bg-[url('img/Banner.png')] h-[calc(100vh-104px)] flex items-center justify-center ">
 
+
+        <div class="text-xl text-center font-normal text-white">
+            <h3>Al-ALQSA BANQUET HALL | BORNX, NY</h3>
+            <p class="text-6xl text-center playfair italic text-white mt-5 ">Let's Play Your Perfect <span
+                    class="text-[#ecd1b1]">Event</span>
+            </p>
+            <button
+                class="text-[16px] text-white font-bold text-center bg-[#d6af80] w-35 h-10 rounded-4xl transition-color duration-300 hover:bg-[#bb946a] mt-10">
+                Book Now
+            </button>
+            <img src="img/Alpona-bg-color-02 1.png" alt="Alpona" class="absolute bottom-0 left-0 ">
+            <img src="img/Alpona-bg-color-02 1.png" alt="Alpona" class="absolute bottom-0 right-0 ">
+        </div>
+
+    </section>
+    <section class="w-full bg-cover bg-center bg-white h-screen ">
+        <div class="flex justify-start item-start">
+        <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute left-0">
+        <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute right-0">
+    </div>
+    <div class="flex container items-center justify-center" >
+        <div class=" text-2xl text-center text-[#d6af80] font-normal  ">
+
+            <h3>Al-Aqsa Banquet Hall</h3>
+            <h1 class="text-4xl text-center text-[#767676] playfair mt-5">Home of Party & Events</h1>
+            </h3>
+            <div class="flex container flex-col-2 justfiy-center items-center">
+                <img src="img/image 1.png" alt="Image-1" class="w- mt-15">
+                <div class="flex w-[630px] h-[421px] bg-[#ffedd8]  mt-15">
+                    <p class="text-lg text-[#767676] text-center w-150 p-20 mt-5 ml-3">
+                        Al-Aqsa Banquet Hall is committed to providing exceptional service to
+                        make your special event unforgettable. Every event is unique and We will
+                        tailor our services to meet your specific requirements. We are well-equipped
+                        to handle corporate events, weddings, and other special occasions of any size,
+                        with top-of-the-line audiovisual equipment, lighting, and sound systems available.
+                    </p>
+                </div>
+            </div>
+</div>
+
+        </div>
+
+
+
+    </section>
+
+    <script>
+        // Replace all placeholders with SVGs
+        lucide.createIcons();
+    </script>
 </body>
 
 
