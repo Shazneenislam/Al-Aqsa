@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Al-Aqsa></Al-Aqsa></title>
+    <title>Al-Aqsa</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
     <style>
         .playfair {
             font-family: "Playfair Display", serif;
@@ -20,393 +19,328 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <!-- Top Bar -->
-    <section class="flex bg-[#ba936a] w-full h-6 justify-center items-center">
-        <div class="container">
-            <!-- Element grid -->
-            <div class="grid grid-cols-2 place-items-center">
-                <!-- left grid -->
-                <div class="inline-flex place-items-center gap-2">
-                    <!-- Call icon -->
-                    <div class="text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="phone" class="lucide lucide-phone">
-                            <path
-                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-                            </path>
-                        </svg>
-                    </div>
-                    <a href="#" class="text-white text-xs hover:underline font-semibold">
-                        Call +16465913852
-                    </a>
-                    <!-- whatsApp icon -->
-                    <div class="w-[20px] ml-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <path fill="#ffffff"
-                                d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z">
-                            </path>
-                        </svg>
-                    </div>
-                    <a href="#" class="text-white text-xs hover:underline font-semibold">
-                        WhatsApp: +16465913852
-                    </a>
-                </div>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center h-20">
+            <!-- logo -->
+            <a href="#">
+                <img src="https://alaqsabanquet.com/wp-content/uploads/2023/05/ALBH-Logo-update.png" alt="Al-Aqsa Party Hall" class="h-12 md:h-16 w-auto">
+            </a>
 
-                <!-- Right grid -->
-
-                <div class="inline-flex place-items-center gap-2 ">
-                    <!-- email icon -->
-                    <div class="text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="mail" class="lucide lucide-mail">
-                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                        </svg>
+            <!-- Menu bar -->
+            <nav class="hidden xl:flex items-center gap-8">
+                <a href="#" class="text-lg text-[#8e0f23] font-bold hover:text-[#bb946a] transition-colors">Home</a>
+                <a href="#" class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] transition-colors">Booking Our Venue</a>
+                <a href="#" class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] transition-colors">Our Menu</a>
+                <a href="#" class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] transition-colors">Contact Us</a>
+                <a href="#" class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] transition-colors">Book Now</a>
+            </nav>
+    
+            <!-- Right side icons -->
+            <div class="flex items-center gap-4">
+                <!-- Profile Button -->
+                <a href="#" class="flex w-10 h-10 bg-[#ecd1b1] items-center justify-center rounded-full transition-colors duration-300 hover:bg-gray-200">
+                    <div class="text-[#8e0f23]">
+                        <i data-lucide="circle-user"></i>
                     </div>
-                    <a href="#" class="text-white text-xs hover:underline font-semibold ">
-                        Email: alaqsabanquet@gmail.com
-                    </a>
-                    <!-- facbook icon -->
-                    <div class="flex w-[80px] h-[24px] bg-[#a88664] ml-5">
-                        <div class="mt-1.5 ml-6 text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" data-lucide="facebook" weidth="13"
-                                class="lucide lucide-facebook">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="flex xl:hidden text-[#8e0f23] ml-2">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
+                </button>
             </div>
         </div>
 
-
-    </section>
-
-    <!-- Header Section -->
-    <section class="flex h-25 p-5 bg-white justify-center items-center ">
-        <!-- logo -->
-
-        <div class="inline-flex items-center content-around ">
-            <img src="https://alaqsabanquet.com/wp-content/uploads/2023/05/ALBH-Logo-update.png"
-                alt="Al-Aqsa Party Hall" class="w-[100px] h-[75px] mr-30">
-            <!-- Menu bar -->
-            <nav class="flex container ml-20">
-                <ul class="grid grid-cols-4 text-center ">
-                    <li class="inline-block"><a href="#"
-                            class="text-lg text-[#8e0f23] font-bold hover:text-[#8e0f23]">Home</a>
-                    </li>
-                    <li class="inline-block"><a href="#"
-                            class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] ">Booking
-                            Our Venue</a></li>
-                    <li class="inline-block"><a href="#"
-                            class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23]  ml-10">Our
-                            Menu</a></li>
-                    <li class="inline-block"><a href="#"
-                            class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23]">Contact&nbsp;Us</a>
-                    </li>
-                </ul>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-t">
+            <nav class="flex flex-col items-center p-4 gap-4">
+                <a href="#" class="text-lg text-[#8e0f23] font-bold hover:text-[#bb946a] transition-colors">Home</a>
+                <a href="#" class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] transition-colors">Booking Our Venue</a>
+                <a href="#" class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] transition-colors">Our Menu</a>
+                <a href="#" class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] transition-colors">Contact Us</a>
+                <a href="#" class="text-lg text-[#bb946a] font-normal hover:text-[#8e0f23] transition-colors">Book Now</a>
             </nav>
+        </div>
+    </header>
 
-
-            <!-- Button Section -->
-            <div class="flex items-center">
+    <main>
+        <!-- Hero Banner -->
+        <section class="flex bg-cover bg-center bg-[url('img/Banner.png')] w-full md:h-[300px] xl:h-[calc(100vh-120px)] items-center justify-center ">
+            <!-- title -->
+            <div class="text-xl text-center font-normal text-white m-4">
+                <h3 class="text-xs md:text-xl lg:text-xl xl:text-3xl playfair">Al-ALQSA BANQUET HALL | BORNX, NY</h3>
+                <p class="text-xl md:text-4xl lg:text-5xl xl:text-6xl text-center playfair italic text-white mt-5 ">Let's Play Your Perfect <span
+                        class="text-[#ecd1b1]">Event</span>
+                </p>
                 <button
-                    class="p-2 text-sm text-white font-bold text-center bg-[#d6af80] w-25 h-10 rounded-lg transition-colors duration-300 hover:bg-[#8e0f23] ">
+                    class="text-[16px] text-white font-bold text-center bg-[#d6af80] px-5 py-2 rounded-4xl transition-color duration-300 hover:bg-[#8e0f23] mt-5 md:mt-5 lg:mt-5 xl:mt-10">
                     Book Now
                 </button>
-                <!-- Profile Button -->
-                <div
-                    class="flex w-10 h-10 bg-[#ecd1b1] ml-6 items-center justify-center rounded-full transition-colors duration-300 hover:bg-white">
-                    <div class="text-[#8e0f23] ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="circle-user" weidth="30" class="lucide lucide-circle-user">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="10" r="3"></circle>
-                            <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path>
-                        </svg>
+                <!-- Decoration -->
+                <img src="img/Alpona-bg-color-02 1.png" alt="Alpona" class="absolute bottom-0 w-1/8 left-0 ">
+                <img src="img/Alpona-bg-color-02 1.png" alt="Alpona" class="absolute bottom-0 w-1/8 right-0 ">
+            </div>
+        </section>
 
-                    </div>
-
-                </div>
+        <!-- About Us Section -->
+        <section class="relative bg-white py-16 sm:py-20">
+            <!-- Decoration -->
+            <div class="absolute top-0 left-0 w-1/8 opacity-50">
+                <img src="img/Alpona-bg-bw 1.png" alt="">
+            </div>
+            <div class="absolute top-0 right-0 w-1/8 opacity-50">
+                <img src="img/Alpona-bg-bw 1.png" alt="">
+            </div>
+            <div class="absolute bottom-0 left-0 w-1/8 opacity-50 rotate-180">
+                <img src="img/Alpona-bg-bw 1.png" alt="">
+            </div>
+            <div class="absolute bottom-0 right-0 w-1/8 opacity-50 rotate-180">
+                <img src="img/Alpona-bg-bw 1.png" alt="">
             </div>
 
-
-        </div>
-
-
-
-    </section>
-    <!-- Hero Banner -->
-    <section
-        class="flex bg-cover bg-center bg-[url('img/Banner.png')] h-[calc(100vh-120px)] items-center justify-center ">
-        <!-- title -->
-        <div class="text-xl text-center font-normal text-white">
-            <h3>Al-ALQSA BANQUET HALL | BORNX, NY</h3>
-            <p class="text-6xl text-center playfair italic text-white mt-5 ">Let's Play Your Perfect <span
-                    class="text-[#ecd1b1]">Event</span>
-            </p>
-            <button
-                class="text-[16px] text-white font-bold text-center bg-[#d6af80] w-35 h-10 rounded-4xl transition-color duration-300 hover:bg-[#8e0f23] mt-10">
-                Book Now
-            </button>
-            <!-- Decoration -->
-            <img src="img/Alpona-bg-color-02 1.png" alt="Alpona" class="absolute bottom-0 w-1/8 left-0 ">
-            <img src="img/Alpona-bg-color-02 1.png" alt="Alpona" class="absolute bottom-0 w-1/8 right-0 ">
-        </div>
-
-    </section>
-
-    <!-- About Us Section -->
-    <section class="relative bg-white h-[calc(100vh-115px)]">
-        <!-- Decoration -->
-        <div class="flex mt-1">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 left-0">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 right-0">
-        </div>
-        <div class="flex">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 bottom-0 w-1/8 left-0">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 bottom-0 w-1/8 right-0">
-        </div>
-        <!-- Title -->
-        <div class="flex container mx-auto place-items-center p-20">
-
-            <div class=" text-2xl text-center text-[#d6af80] font-normal ">
-                <img src="img/Mini-alpona.png" alt="Decorative Shape1" class="mx-auto ">
-                <h3 class="mt-5">Al-Aqsa Banquet Hall</h3>
-                <h1 class="text-4xl text-center text-[#767676] playfair mt-5">Home of Party &amp; Events</h1>
+            <!-- Content -->
+            <div class="relative container mx-auto px-4">
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img src="img/shape_brown.svg" alt="Decorative Shape1" class=" w-auto">
+                    <h3 class="mt-4 text-2xl text-[#d6af80] playfair">Al-Aqsa Banquet Hall</h3>
+                    <h1 class="text-3xl lg:text-4xl text-[#767676] playfair italic mt-2">Home of Party & Events</h1>
+                </div>
                 <!-- Image box -->
-                <div class="flex container flex-col-2 mt-15 justify-center">
+                <div class="flex container mt-5 xl:mt-15 justify-center mb-10 md:mb-10 lg:mb-20 xl:mb-25">
                     <img src="img/image 1.png" alt="Image-1" class="w-2/5">
                     <div class="w-2/5 bg-[#ffedd8]">
-                        <p class="text-xl text-[#767676] playfair p-20">
+                        <p class="text-xs lg:text-xl xl:text-2xl text-[#767676] text-justify playfair italic flex justify-center items-center p-3 md:p-8 lg:p-10 xl:p-15">
                             Al-Aqsa Banquet Hall is committed to providing exceptional service to
                             make your special event unforgettable. Every event is unique and We will
                             tailor our services to meet your specific requirements. We are well-equipped
                             to handle corporate events, weddings, and other special occasions of any size,
                             with top-of-the-line audiovisual equipment, lighting, and sound systems available.
+                            We are always ready to handle any event of any size, with top-of-the-line audiovisual 
+                            equipment, lighting, and food. Visit and see for yourself.
                         </p>
                     </div>
                 </div>
+                
+            </div>
+        </section>
+
+        <!-- Booking -->
+        <section class="flex bg-[#8e0f22] h-[calc(100vh-50px)]">
+            <img src="img/Alpona2.png" alt="Alpona2" class="absolute w-1/8 h-[calc(100vh-50px)] left-0 "/>
+            <img src="img/Alpona2.png" alt="Alpona2" class="absolute w-1/8 h-[calc(100vh-50px)] right-0 "/>
+        </section>
+
+        <!-- Menu section -->
+        <section class="relative bg-white h-[] md:mb-20">
+            <!-- Decoration -->
+            <div class="flex mb-1">
+                <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 left-0"/>
+                <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 right-0"/>
+            </div>
+            <div class="hidden xl:flex mt-1">
+                <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 -bottom-20 w-1/8 left-0"/>
+                <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 -bottom-20 w-1/8 right-0"/>
             </div>
 
-        </div>
-
-    </section>
-    <!-- Booking -->
-    <section class="flex bg-[#8e0f22] h-[calc(100vh-50px)]">
-        <img src="img/Alpona2.png" alt="Alpona2" class="absolute w-1/8 h-[calc(100vh-50px)] left-0 ">
-        <img src="img/Alpona2.png" alt="Alpona2" class="absolute w-1/8 h-[calc(100vh-50px)] right-0 ">
-
-
-    </section>
-
-    <!-- Menu section -->
-    <section class="relative bg-white h-[calc(100vh-115px)]">
-        <!-- Decoration -->
-        <div class="flex mb-1">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 left-0">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 right-0">
-        </div>
-        <div class="flex mt-1">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 bottom-0 w-1/8 left-0">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 bottom-0 w-1/8 right-0">
-        </div>
-        <!-- title -->
-        <div class="flex container mx-auto justify-center items-center mt-20 ">
-            <div class="text-2xl text-center text-[#d6af80] font-normal">
-                <img src="img/Mini-alpona.png" alt="Decorative Shape1" class="mx-auto justify-center items-center ">
-                <h3 class="mt-5">Al-Aqsa Banquet Hall</h3>
-                <h1 class="text-4xl text-center text-[#767676] playfair mt-5">Our Menu</h1>
+            <!-- title -->
+            <div class="flex flex-col justify-center items-center text-2xl text-center text-[#d6af80] font-normal md:mt-5 lg:mt-15 xl:mt-10 mb-10">
+                <img src="img/shape_brown.svg" alt="Decorative Shape1" class="mx-auto justify-center items-center">
+                <h3 class=" text-2xl md:text-xl">Al-Aqsa Banquet Hall</h3>
+                <h1 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center text-[#767676] playfair mt-4">Our Menu</h1>
                 <!-- Menu option -->
-                <div class="grid container grid-cols-4 gap-8 mt-20">
-                    <div>
-                        <img src="img/Menu1.png" alt="Menu-image1"
-                            class="w-60 rounded-lg transform motion-safe:hover:scale-105">
-                        <h2 class="text-start text-xl text-[#a19c9c] hover:underline mt-3">PREMIUM MENU</h2>
-                        <p class="text-start text-lg font-bold text-black playfair mt-1">$ 26.99</p>
-                    </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5 xl:gap-8 md:mt-5 lg:mt-15 xl:mt-10">
                     <div>
                         <img src="img/Menu2.png" alt="Menu-image2"
-                            class="w-60 rounded-lg transform motion-safe:hover:scale-105">
-                        <h2 class="text-start text-xl text-[#a19c9c] hover:underline mt-3">BASIC MENU</h2>
+                            class="w-85 md:w-80 lg:w-100 xl:w-70 rounded-lg transform duration-300 hover:scale-105"/>
+                        <h2 class="text-start text-sm md:text-sm lg:text-xl text-[#a19c9c] hover:underline mt-3">BASIC MENU</h2>
                         <p class="text-start text-lg font-bold text-black playfair mt-1">$ 19.99</p>
                     </div>
                     <div>
+                        <img src="img/Menu4.png" alt="Menu-image4"
+                            class="w-85 md:w-80 lg:w-100 xl:w-70 rounded-lg transform duration-300 hover:scale-105"/>
+                        <h2 class="text-start text-sm md:text-sm lg:text-xl text-[#a19c9c] hover:underline mt-3">STANDARD MENU</h2>
+                        <p class="text-start text-lg font-bold text-black playfair mt-1">$ 23.99</p>
+                    </div>
+                    <div>
                         <img src="img/Menu3.png" alt="Menu-image3"
-                            class="w-60 rounded-lg transform motion-safe:hover:scale-105">
-                        <h2 class="text-start text-xl text-[#a19c9c] hover:underline mt-3 w-50">STANDARD PREMIUM MENU
-                        </h2>
+                            class="w-85 md:w-80 lg:w-100 xl:w-70 rounded-lg transform duration-300 hover:scale-105"/>
+                        <h2 class="text-start text-sm md:text-sm lg:text-xl text-[#a19c9c] hover:underline mt-3">STANDARD PREMIUM MENU</h2>
                         <p class="text-start text-lg font-bold text-black playfair mt-1">$ 24.99</p>
                     </div>
                     <div>
-                        <img src="img/Menu4.png" alt="Menu-image4"
-                            class="w-60 rounded-lg transform motion-safe:hover:scale-105">
-                        <h2 class="text-start text-xl text-[#a19c9c] hover:underline mt-3">STANDARD MENU</h2>
-                        <p class="text-start text-lg font-bold text-black playfair mt-1">$ 23.99</p>
+                        <img src="img/Menu1.png" alt="Menu-image1"
+                            class="w-85 md:w-80 lg:w-100 xl:w-70 rounded-lg transform duration-300 hover:scale-105"/>
+                        <h2 class="text-start text-sm md:text-sm lg:text-xl text-[#a19c9c] hover:underline mt-3">PREMIUM MENU</h2>
+                        <p class="text-start text-lg font-bold text-black playfair mt-1">$ 26.99</p>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </section>
 
-    </section>
-    <!-- Event -->
-    <section class="relative bg-[#8e0f22] h-[calc(100vh-305px)] overflow-y-hidden">
-        <div class="flex mt-1">
-            <img src="img/Alpona2.png" alt="Alpona2" class="absolute w-1/8 h-[calc(100vh-50px)] left-0 ">
-            <img src="img/Alpona2.png" alt="Alpona2" class="absolute w-1/8 h-[calc(100vh-50px)] right-0 ">
-        </div>
-        <div class="flex container mx-auto justify-center items-center mt-20 ">
-            <div class="text-5xl text-center playfair text-[#d6af80] font-normal">
-                <img src="img/Mini-Alpona3.png" alt="Decorative Shape3" class="mx-auto justify-center items-center ">
-                <h3 class="mt-10">Events We Cater</h3>
+        <!-- Event -->
+        <section class="bg-[#8e0f22] h-auto xl:h-[600px] overflow-y-hidden">
+            <div class="hidden xl:flex mt-1">
+                <img src="img/Alpona2.png" alt="Alpona2" class="absolute w-1/8 h-[calc(100vh-50px)] left-0"/>
+                <img src="img/Alpona2.png" alt="Alpona2" class="absolute w-1/8 h-[calc(100vh-50px)] right-0"/>
+            </div>
+            <div class="flex flex-col justify-center items-center text-4xl text-center playfair text-[#d6af80] font-normal m-2 xl:mt-0 ">
+                <img src="img/shape_brown.svg" alt="Decorative Shape3" class="mx-auto justify-center items-center pt-10">
+                <h3 class="mt-5 xl:mt-5">Events We Cater</h3>
                 <!-- Menu option -->
-                <div class="grid container grid-cols-4 gap-8 mt-15">
-                    <div>
-                        <img src="img/Event1.png" alt="Event-image1"
-                            class="w-60 rounded-lg transform motion-safe:hover:scale-105">
-                       
-                    </div>
-                    <div class="">
-                        <img src="img/Event2.png" alt="Event-image2"
-                            class="w-60 rounded-lg transform motion-safe:hover:scale-105">
-                        
-                    </div>
-                    <div>
-                        <img src="img/Event3.png" alt="Event-image3"
-                            class="w-60 rounded-lg transform motion-safe:hover:scale-105">
-                       
-                    </div>
-                    <div>
-                        <img src="img/Event4.png" alt="Event-image4"
-                            class="w-60 rounded-lg transform motion-safe:hover:scale-105">
-                      
+                <div class="flex flex-wrap justify-center items-stretch gap-8 mt-5 pb-10 xl:mt-12">
+                    <!-- Event Card 1: Wedding -->
+                    <div class="w-85 md:w-80 lg:w-100 xl:w-70 max-w-sm bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="img/photo2.jpg" alt="Wedding Event" class="w-full h-48 object-cover"/>
+                        <div class="p-6 pt-10 relative text-center">
+                            <img src="img/cone.svg" alt="Decorative Shape" class="absolute w-24 -top-3  left-1/2 -translate-x-1/2"/>
+                            <h3 class="text-2xl font-bold mb-2 text-[#8e0f22]">Wedding</h3>
+                            <p class="text-sm text-gray-600">
+                                Celebrate your special day with us. We provide a beautiful venue and impeccable service for a memorable wedding.
+                            </p>
+                        </div>
                     </div>
 
+                    <!-- Event Card 2: Birthday -->
+                    <div class="w-85 md:w-80 lg:w-100 xl:w-70 max-w-sm bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="img/photo3.jpg" alt="Birthday Party" class="w-full h-48 object-cover"/>
+                        <div class="p-6 pt-10 relative text-center">
+                            <img src="img/cone.svg" alt="Decorative Shape" class="absolute w-24 -top-3 left-1/2 -translate-x-1/2"/>
+                            <h3 class="text-2xl font-bold mb-2 text-[#8e0f22]">Birthday</h3>
+                            <p class="text-sm text-gray-600">
+                                Host a birthday party to remember. Our hall can be customized to fit any theme and celebration for any age.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3: Corporate Event -->
+                    <div class="w-85 md:w-80 lg:w-100 xl:w-70 max-w-sm bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="img/photo4.jpg" alt="Corporate Event" class="w-full h-48 object-cover"/>
+                        <div class="p-6 pt-10 relative text-center">
+                            <img src="img/cone.svg" alt="Decorative Shape" class="absolute w-24 -top-3 left-1/2 -translate-x-1/2"/>
+                            <h3 class="text-2xl font-bold mb-2 text-[#8e0f22]">Corporate</h3>
+                            <p class="text-sm text-gray-600">
+                                Impress your clients and colleagues. We are equipped for conferences, seminars, and corporate gatherings.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Event Card 4: Anniversary -->
+                    <div class="w-85 md:w-80 lg:w-100 xl:w-70 max-w-sm bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="img/photo8.jpg" alt="Anniversary Celebration" class="w-full h-48 object-cover"/>
+                        <div class="p-6 pt-10 relative text-center">
+                            <img src="img/cone.svg" alt="Decorative Shape" class="absolute w-24 -top-3 left-1/2 -translate-x-1/2"/>
+                            <h3 class="text-2xl font-bold mb-2 text-[#8e0f22]">Anniversary</h3>
+                            <p class="text-sm text-gray-600">
+                                Mark your milestone with elegance. Our venue provides a romantic and sophisticated setting for your anniversary.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About2 -->
-    <section class="relative bg-white h-[calc(100vh-115px)]">
-        <!-- Decoration -->
-        <div class="flex mt-1">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 left-0">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 right-0">
-        </div>
-        <div class="flex mt-1">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 bottom-0 w-1/8 left-0">
-            <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 bottom-0 w-1/8 right-0">
-        </div>
-        <!-- Title -->
-        <div class="flex container mx-auto place-items-center p-20">
+        <!-- About2 -->
+        <section class="relative bg-white ">
+            <!-- Decoration -->
+            <div class="flex mt-1">
+                <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 left-0">
+                <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute w-1/8 right-0">
+            </div>
+            <div class="flex">
+                <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 bottom-0 w-1/8 left-0">
+                <img src="img/Alpona-bg-bw 1.png" alt="Alpona-bw" class="absolute rotate-180 bottom-0 w-1/8 right-0">
+            </div>
 
-            <div class=" text-2xl text-center text-[#d6af80] font-normal ">
-                <img src="img/Mini-Alpona2.png" alt="Decorative Shape2" class="mx-auto ">
-                <h3 class="mt-5">We Offer</h3>
-                <h1 class="text-4xl text-center text-[#767676] playfair mt-5">To Go Catering</h1>
+            <!-- Title -->
+            <div class="mt-5 xl:mt-15 flex flex-col justify-center items-center ">
+                <img src="img/Mini-Alpona2.png" alt="Decorative Shape1" class="mx-auto justify-center items-center">
+                <h3 class="xl:mt-5 text-center text-2xl text-[#d6af80] playfair">We Offer</h3>
+                <h1 class="md:text-3xl lg:text-3xl xl:text-4xl text-center text-[#767676] playfair italic md:mt-5 lg:mt-5 xl:mt-5">To Go &amp; Catering</h1>
                 <!-- Image box -->
-                <div class="flex container flex-col-2 mt-15 justify-center">
-                    <img src="img/image 1.png" alt="Image-1" class="w-4/5">
-                    <div class="w-4/5 bg-[#ffedd8]">
-                        <p class="text-xl text-[#767676] playfair items-center p-15">
-                            Indulge your senses with AL-Aqsa Banquet Hall's exceptional catering services, where
-                            culinary artistry meets impeccable service. Our creative culinary team uses the freshest and
-                            finest ingredients to prepare exquisite dishes that are tailored to your tastes and
-                            preferences. From elegant plated dinners to sumptuous buffets, our menus feature a range of
-                            delectable cuisine, including international flavors and local favorites. Our commitment to
-                            excellence extends beyond the kitchen, as our attentive staff ensures that every aspect of
-                            your catering experience is flawless. Let us take your event to the next level with our
-                            unparalleled catering services at AL-AQSA Banquet Hall.
+                <div class="flex container mt-5 xl:mt-15 justify-center mb-10 md:mb-10 lg:mb-20 xl:mb-25">
+                    <img src="img/image 1.png" alt="Image-1" class="w-2/5">
+                    <div class="w-2/5 bg-[#ffedd8]">
+                        <p class="text-xs lg:text-xl xl:text-2xl text-[#767676] text-justify playfair italic flex justify-center items-center p-3 md:p-8 lg:p-10 xl:p-15">
+                            Al-Aqsa Banquet Hall is committed to providing exceptional service to
+                            make your special event unforgettable. Every event is unique and We will
+                            tailor our services to meet your specific requirements. We are well-equipped
+                            to handle corporate events, weddings, and other special occasions of any size,
+                            with top-of-the-line audiovisual equipment, lighting, and sound systems available.
+                            We are always ready to handle any event of any size, with top-of-the-line audiovisual 
+                            equipment, lighting, and food. Visit and see for yourself.
                         </p>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-        </div>
 
-    </section>
     <!-- Footer -->
-    <section class="relative bg-[#360909] h-[calc(100vh-500px)]">
-        <div class=" flex mt-1">
-            <img src="img/Alpona-bg-color-02 1.png" alt="Alpona" class="absolute opacity-40 rotate-180 w-1/8 left-0 ">
-            <img src="img/Alpona-bg-color-02 1.png" alt="Alpona" class="absolute opacity-40 rotate-180 w-1/8 right-0">
+    <footer class="relative bg-[#360909] text-white overflow-hidden py-16 sm:py-20">
+        <!-- Decorative background images -->
+        <div class="absolute inset-0 opacity-40">
+            <img src="img/Alpona-bg-color-02 1.png" alt="" class="absolute top-0 left-0 rotate-180 w-1/8">
+            <img src="img/Alpona-bg-color-02 1.png" alt="" class="absolute top-0 right-0 rotate-180 w-1/8">
         </div>
-        <div class="flex container mx-auto justify-center items-start mt-10 ">
-            <div class="absolute text-white place-items-center">
-                <img src="img/Square-Alpona.png" alt="SquareAlpona" class="mx-auto">
-                <h2 class="w-1/2 text-2xl text-center playfair mt-10">“ There is only one happiness in
-                    this
-                    life,
-                    to
-                    love and be loved.”</h2>
-                <div class="mt-10 w-xl place-items-center">
-                    <img src="img/Line-Alpona.png" alt="Line-Alpona">
-                </div>
-                <div class="absolute grid container grid-cols-3 place-items-center mt-15">
 
-                    <h3 class="text-white text-md">Phone
-                        <p class="text-white mt-2">+1 6465913852</p>
-                    </h3>
-                    <h3 class="text-white text-md">Address
-                        <p class="text-white  mt-2">1410 Union port RD Bronx,NY-10462</p>
-                    </h3>
-                    <h3 class="text-white text-md ">E-mail
-                        <p class="text-white mt-2">alaqsabanquet@gmail.com</p>
-                    </h3>
+        <!-- Main content container -->
+        <div class="relative z-10 container mx-auto px-4 flex flex-col items-center gap-12">
+
+            <!-- Section 1: Quote -->
+            <div class="text-center">
+                <img src="img/Square-Alpona.png" alt="Decorative Motif" class="mx-auto h-20 sm:h-24 w-auto mb-8">
+                <h2 class="text-2xl lg:text-3xl playfair max-w-3xl mx-auto">“There is only one happiness in this life, to love and be loved.”</h2>
+            </div>
+
+            <!-- Section 2: Separator -->
+            <div class="w-full max-w-4xl my-4">
+                <img src="img/Line-Alpona.png" alt="Decorative Line" class="w-full">
+            </div>
+
+            <!-- Section 3: Contact Info -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center w-full max-w-5xl">
+                <div>
+                    <h3 class="font-bold text-lg">Phone</h3>
+                    <a href="tel:+16465913852" class="mt-2 inline-block hover:text-[#d6af80] transition-colors">+1 6465913852</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Address</h3>
+                    <p class="mt-2">1410 Union port RD Bronx, NY-10462</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">E-mail</h3>
+                    <a href="mailto:alaqsabanquet@gmail.com" class="mt-2 inline-block hover:text-[#d6af80] transition-colors">alaqsabanquet@gmail.com</a>
                 </div>
             </div>
 
-            <div class="absolute flex container left bottom-5">
-                <h3 class="text-white text-xs">© Al-Aqsa Banquet Hall   •   All Rights Reserved.   •   Terms & Use   • 
-                     Privacy Policy
-                </h3>
-            </div>
-            <div class="absolute flex right-0 bottom-5 gap-5 mr-20">
-                <div class="text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-facebook-icon lucide-facebook">
-                        <path d="M18 2h-3a5 5 0 0 0-5 
-                    5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                    </svg>
-                </div>
-                <div class="text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-instagram-icon lucide-instagram">
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                    </svg>
-                </div>
-                <div class="text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-youtube-icon lucide-youtube">
-                        <path
-                            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
-                        <path d="m10 15 5-3-5-3z" />
-                    </svg>
+            <!-- Section 4: Bottom Bar (Copyright & Socials) -->
+            <div class="w-full border-t border-white/20 pt-8 mt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6">
+                <ul class="flex flex-wrap items-center justify-center gap-x-4 text-xs text-white/70">
+                    <li>© Al-Aqsa Banquet Hall</li>
+                    <li class="hidden sm:inline-block before:content-['•'] before:mr-4">All Rights Reserved.</li>
+                    <li class="before:content-['•'] before:mr-4"><a href="TermsAndUse.html" class="hover:text-white">Terms & Use</a></li>
+                    <li class="before:content-['•'] before:mr-4"><a href="PrivacyPolicy.html" class="hover:text-white">Privacy Policy</a></li>
+                </ul>
+                <div class="flex items-center gap-5">
+                    <a href="#" class="hover:text-white"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="hover:text-white"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="hover:text-white"><i data-lucide="youtube"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+    
     <script>
         // Replace all placeholders with SVGs
         lucide.createIcons();
+
+        // Mobile menu toggle
+        // const menuBtn = document.getElementById('menu-btn');
+        // const mobileMenu = document.getElementById('mobile-menu');
+
+        // menuBtn.addEventListener('click', () => {
+        //     mobileMenu.classList.toggle('hidden');
+        // });
     </script>
-
-
-
 </body>
-
-
 </html>
